@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Sarthak - Developer Portfolio</title>
+    <style>
+        /* Add the provided CSS code here */
+        index {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 4, 34);
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10px;
+            background-color: rgb(15, 15, 50);
+            font-size: medium;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        .menu {
+            padding: 20px 20px;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .menu1 {
+            background: rgb(15, 15, 50);
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .menu a {
+            font-size: 1.05rem;
+            justify-content: right;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        .menu a::before {
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #fff;
+            transition: 0.5s transform ease;
+            transform: scale3d(0, 1, 1);
+            transform-origin: 0 50%;
+        }
+
+        .menu a:hover::before {
+            transform: scale3d(1, 1, 1);
+        }
+
+        .menu1 a::before {
+            background: #1acad6;
+            transform-origin: 100% 50%;
+        }
+
+        .menu1 a:hover::before {
+            transform-origin: 0 50%;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            justify-content: left;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 25px 0;
+        }
+
+        .color1 {
+            color: rgb(234, 199, 153);
+        }
+
+        #element {
+            color: blanchedalmond;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+       
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .text-grey {
+            color: grey;
+            font-size: small;
+        }
+
+        
+
+        @keyframes glowing {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu menu1">
+            <div class="left">Sarthak's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="color1">Sarthak</span>.
+                <div>And I'm a <span class="color1">DevOps</span> aspirant.</div>
+                <div>I'm passionate about</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg3.png" alt="" width="650" height="550">
+            </div>
+        </section>
+        
+      
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Cloud.', 'DevOps.', 'OpenSource.'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
